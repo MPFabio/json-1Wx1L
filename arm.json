@@ -47,7 +47,7 @@
         "description": "Password for Linux"
       }
     },
-    "dns": {
+    "my-dns": {
       "type": "string",
       "defaultValue": "[concat('my-', uniqueString(resourceGroup().id))]",
       "metadata": {
@@ -68,7 +68,7 @@
       "metadata": {
         "description": "The base URI where artifacts required by this template are located including a trailing '/'"
       },
-      "defaultValue": "[deployment().properties.templatelink.uri]"
+      "defaultValue": "https://raw.githubusercontent.com/MPFabio/json-1Wx1L/tree/main"
     }
   },
   "variables": {
